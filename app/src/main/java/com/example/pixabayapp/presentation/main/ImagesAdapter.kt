@@ -43,8 +43,7 @@ class ImagesAdapter : RecyclerView.Adapter<ImagesAdapter.ImageHolder>() {
 
 
     fun setList(list: List<ApiResponse.Hit>) {
-        differ.submitList(list)
-        println("Passsou aqui")
+        differ.submitList(list.toList())
     }
 
 

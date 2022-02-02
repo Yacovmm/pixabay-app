@@ -67,6 +67,8 @@ class MainViewModel @Inject constructor(
                     error = false
                 )
             )
+
+            isPaginating = false
         } else {
             _dataLiveData.postValue(
                 HomeViewState(
